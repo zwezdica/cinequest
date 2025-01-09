@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +13,7 @@ body {
   color: white;
 }
 
-/* Header */
+/* Header test 123 */
 header {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px;
@@ -102,7 +101,7 @@ h1 {
 
 .close-btn:hover,
 .close-btn:focus {
-  color: red; 
+  color: red;
   text-decoration: none;
   cursor: pointer;
 }
