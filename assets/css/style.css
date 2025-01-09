@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+body {
+  background: url("../img/cam.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  font-family: "Poppins", serif;
+  color: white;
+  overflow-y: auto;
+}
+
+header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 2;
+}
+
+#header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 600px;
+  margin-right: 10px;
+}
+
+#header-left select {
+  padding: 10px 15px;
+  background-color: #414663;
+  color: white;
+  /* border: 2px solid #ccc; */
+  border-radius: 10px;
+  font-size: 16px;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#header-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  width: 100%;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(51, 51, 51, 0.7);
+  padding: 20px;
+  margin-left: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#login-form input,
+#login-form button {
+  padding: 10px 15px;
+  font-size: 16px;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  margin-right: 5px;
+}
+
+#favorites-card {
+  background-color: #414663;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100px;
+}
+
+#favorites-card:hover {
+  background-color: #676f9e;
+}
+
+.site-name {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-30%);
+  font-size: 8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #414663;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.search-box {
+  position: absolute;
+  top: 70%;
+  right: 20%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.search-box button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #676f9e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background-color: #414663;
+}
+/* Movie Cards */
+.movies-container {
+  margin-top: 120px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.movie-card {
+  padding: 15px;
+  background-color: #414663;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.movie-card button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #676f9e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.movie-card button:hover {
+  background-color: #414663;
+}
+
+.heart-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.heart-button.favorited {
+  color: red;
+}

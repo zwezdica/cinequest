@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", serif;
+  background-color: #111;
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+h1 {
+  margin-top: 40px;
+  font-size: 2rem;
+  color: #94a0e4;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Back Button */
+.back-button {
+  background-color: #414663;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.back-button:hover {
+  background-color: #676f9e;
+}
+
+#movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-top: 120px;
+  padding: 20px;
+  overflow-y: auto;
+  height: calc(100vh - 120px);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 120px;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  overflow-y: auto;
+  max-height: 80%;
+}
+
+.modal-content {
+  background-color: #111;
+  color: white;
+  margin: auto;
+  padding: 15px;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 450px;
+  border-radius: 8px;
+}
+
+.close-btn {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.movie-card {
+  background-color: #414663;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.heart-button {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+.favorited {
+  color: red;
+}
