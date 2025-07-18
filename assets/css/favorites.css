@@ -140,3 +140,152 @@ h1 {
 .favorited {
   color: red;
 }
+
+/* Media Queries for Responsive Favorites Page */
+@media (max-width: 1200px) {
+  #favorites-container {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .movie-card {
+    width: 180px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  header {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+  }
+
+  .back-button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  #favorites-container {
+    padding: 15px;
+    max-height: calc(100vh - 150px);
+  }
+
+  .modal {
+    width: 90%;
+    top: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6rem;
+    margin-top: 25px;
+  }
+
+  #favorites-container {
+    margin-top: 10px;
+    max-height: calc(100vh - 140px);
+    gap: 12px;
+  }
+
+  .movie-card {
+    width: 160px;
+    padding: 12px;
+  }
+
+  .modal {
+    top: 80px;
+    max-height: 85%;
+  }
+
+  .modal-content {
+    padding: 10px;
+  }
+
+  .heart-button {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    margin-top: 20px;
+  }
+
+  .back-button {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  #favorites-container {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    max-height: calc(100vh - 130px);
+  }
+
+  .movie-card {
+    width: 100%;
+    max-width: 160px;
+    padding: 10px;
+  }
+
+  .modal {
+    top: 60px;
+    width: 95%;
+    padding: 10px;
+  }
+
+  .close-btn {
+    font-size: 24px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  #favorites-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .movie-card {
+    max-width: 180px;
+    margin: 0 auto;
+  }
+
+  .modal {
+    top: 50px;
+    max-height: 90%;
+  }
+
+  .heart-button {
+    font-size: 1.1rem;
+  }
+}
+
+/* Additional adjustments for very small heights */
+@media (max-height: 600px) {
+  #favorites-container {
+    max-height: calc(100vh - 120px);
+  }
+
+  .modal {
+    top: 70px;
+    max-height: 70vh;
+  }
+}

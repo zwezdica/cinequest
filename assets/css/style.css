@@ -198,3 +198,139 @@ header {
 .heart-button.favorited {
   color: red;
 }
+
+
+@media (max-width: 1600px) {
+  #header-left {
+    margin-left: 400px;
+  }
+  
+  .site-name {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  #header-left {
+    margin-left: 200px;
+  }
+  
+  .movies-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .site-name {
+    font-size: 5rem;
+    transform: translateX(-35%);
+  }
+  
+  .search-box {
+    right: 15%;
+  }
+}
+
+@media (max-width: 992px) {
+  #header-left {
+    margin-left: 100px;
+  }
+  
+  .site-name {
+    font-size: 4rem;
+    transform: translateX(-40%);
+  }
+  
+  .search-box {
+    right: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  gap: 10px;
+  position: static;
+  background-color: rgba(51, 51, 51, 0.7);
+  }
+  
+  #header-left {
+    margin-left: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  #header-right {
+    width: 100%;
+  }
+  
+  #login-form {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .site-name {
+    position: static;
+    transform: none;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3.5rem;
+  }
+  
+  .search-box {
+    position: static;
+    margin: 20px auto;
+    width: 90%;
+    justify-content: center;
+  }
+  
+  .movies-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .site-name {
+    font-size: 2.5rem;
+  }
+  
+  #header-left select {
+    width: 150px;
+  }
+  
+  #login-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #login-form input,
+  #login-form button {
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  .movies-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .movie-card {
+    height: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .site-name {
+    font-size: 2rem;
+  }
+  
+  #header-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  #header-left select {
+    width: 100%;
+  }
+}

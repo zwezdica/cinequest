@@ -178,3 +178,171 @@ body {
 #back-button:hover {
   background-color: #676f9e;
 }
+
+@media (max-width: 1600px) {
+  .site-name {
+    font-size: 6rem;
+  }
+
+  .search-box {
+    right: 15%;
+  }
+
+  .category-card {
+    width: 180px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .site-name {
+    font-size: 5rem;
+    top: 35%;
+  }
+
+  .search-box {
+    top: 65%;
+    right: 10%;
+  }
+
+  .category-container {
+    gap: 20px;
+  }
+
+  .category-card {
+    width: 160px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .site-name {
+    font-size: 4rem;
+    top: 30%;
+  }
+
+  .search-box {
+    top: 60%;
+    right: 5%;
+    flex-direction: column;
+    width: 80%;
+    max-width: 400px;
+  }
+
+  .search-box input,
+  .search-box button {
+    width: 100%;
+  }
+
+  .category-container {
+    flex-wrap: wrap;
+    padding: 0 20px;
+    top: 10px;
+  }
+
+  .category-card {
+    width: calc(33% - 20px);
+    min-width: 140px;
+  }
+
+  .movies-container {
+    max-height: 50vh;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-attachment: fixed;
+  }
+
+  .site-name {
+    font-size: 3.5rem;
+    top: 25%;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .search-box {
+    position: static;
+    margin: 20px auto;
+    transform: none;
+    width: 90%;
+  }
+
+  .category-container {
+    position: relative;
+    transform: none;
+    left: auto;
+    top: 20px;
+    padding: 0 10px;
+    gap: 15px;
+  }
+
+  .category-card {
+    width: calc(50% - 15px);
+  }
+
+  #back-button {
+    top: 5%;
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .movies-container {
+    margin: 10px;
+    padding: 10px;
+    max-height: 55vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .site-name {
+    font-size: 2.5rem;
+    top: 20%;
+  }
+
+  .category-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-card {
+    width: 80%;
+    max-width: 200px;
+  }
+
+  .movie-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .movie-card img {
+    width: 80px;
+  }
+
+  #back-button {
+    top: 2%;
+    left: 10px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .site-name {
+    font-size: 2rem;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .category-card h3 {
+    font-size: 16px;
+  }
+
+  .movies-container {
+    max-height: 60vh;
+    margin: 5px;
+    padding: 5px;
+  }
+}

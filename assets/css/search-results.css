@@ -138,3 +138,124 @@ h1 {
 .favorited {
   color: red;
 }
+
+@media (max-width: 1200px) {
+  #movies-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+  header {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+  }
+
+  .back-button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .modal {
+    width: 90%;
+    top: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6rem;
+    margin-top: 25px;
+  }
+
+  #movies-container {
+    margin-top: 90px;
+    height: calc(100vh - 90px);
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .movie-card {
+    width: 160px;
+    padding: 15px;
+  }
+
+  .modal {
+    top: 80px;
+    max-height: 85%;
+  }
+
+  .modal-content {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    margin-top: 20px;
+  }
+
+  .back-button {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  #movies-container {
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+    justify-content: center;
+  }
+
+  .movie-card {
+    width: 140px;
+    padding: 10px;
+  }
+
+  .heart-button {
+    font-size: 1.2rem;
+  }
+
+  .modal {
+    top: 60px;
+    width: 95%;
+    padding: 10px;
+  }
+
+  .close-btn {
+    font-size: 24px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  #movies-container {
+    grid-template-columns: 1fr;
+    margin-top: 60px;
+    gap: 10px;
+  }
+
+  .movie-card {
+    width: 100%;
+    max-width: 180px;
+  }
+
+  .modal {
+    top: 50px;
+  }
+}
